@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivCasa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/casa"
+        android:layout_margin="10dp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localidad"
+        android:id="@+id/tvLocalidad"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivCasa"
+        android:layout_toEndOf="@+id/ivCasa"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Precio"
+        android:id="@+id/tvPrecio"
+        android:layout_below="@+id/tvLocalidad"
+        android:layout_toRightOf="@+id/ivCasa"
+        android:layout_toEndOf="@+id/ivCasa"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="€"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/tvPrecio"
+        android:layout_toRightOf="@+id/tvPrecio"
+        android:layout_toEndOf="@+id/tvPrecio"
+        android:layout_marginLeft="10dp" />
+</RelativeLayout>
