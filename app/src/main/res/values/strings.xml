@@ -4,7 +4,48 @@
     <string name="app_name">Inmobiliaria</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_anadir">Nuevo inmueble</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_secundaria">Secundaria</string>
+    <string name="hintlocalidad">Localidad</string>
+    <string name="hintdireccion">Direccion</string>
+    <string name="hinttipo">Tipo</string>
+    <string name="hintprecio">Precio</string>
+    <string name="nuevoinmueble">Nuevo inmueble</string>
+    <string name="btanadir">Añadir</string>
+    <string name="btcancelar">Cancelar</string>
+    <string name="dialog_message">¿Está seguro de que desea borrar el inmueble y todas sus fotos?</string>
+    <string name="dialog_title">Borrar inmueble</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="title_activity_editar">Editar</string>
+    <string name="no_fotos">No hay fotos para mostrar</string>
+    <string name="tag_posicion">posicion</string>
+    <string name="tag_id">_id</string>
+    <string name="tag_localidad">localidad</string>
+    <string name="tag_direccion">direccion</string>
+    <string name="tag_tipo">tipo</string>
+    <string name="tag_precio">precio</string>
+    <string name="campos_vacios">Debe rellenar todos los campos</string>
+    <string name="formato">yyyyMMdd_HHmmss</string>
+    <string name="extension">.jpg</string>
+    <string name="path">file:</string>
+    <string name="inm">inmueble_</string>
+    <string name="inm_mod">Inmueble modificado</string>
+    <string name="inm_del">Inmueble borrado</string>
+    <string name="inm_ex">El inmueble ya existe</string>
+
+    <!-- XML -->
+    <string name="nombre_xml">archivo.xml</string>
+    <string name="no_ex">No existe el archivo</string>
+    <string name="codificacion">UTF-8</string>
+    <string name="indent">http://xmlpull.org/v1/doc/features.html#indent-output</string>
+    <string name="root">inmuebles</string>
+    <string name="etiqueta_objeto">inmueble</string>
+    <string name="etiqueta_elemento1">_id</string>
+    <string name="etiqueta_elemento2">localidad</string>
+    <string name="etiqueta_elemento3">direccion</string>
+    <string name="etiqueta_elemento4">tipo</string>
+    <string name="etiqueta_elemento5">precio</string>
 
 </resources>

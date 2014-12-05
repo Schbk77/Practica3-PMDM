@@ -8,5 +8,6 @@
         android:layout_height="wrap_content"
         android:name="com.example.serj.inmobiliaria.Detalle"
         android:id="@+id/fragment3"
-        tools:layout="@layout/fragment_detalle" />
+        tools:layout="@layout/fragment_detalle"
+        android:layout_centerInParent="true" />
 </RelativeLayout>

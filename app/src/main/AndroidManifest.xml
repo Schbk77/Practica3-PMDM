@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.serj.inmobiliaria" >
 
+    <!-- Permiso camara -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <!-- Permiso de lectura para acceder a la galería de fotos de la memoria externa -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Permiso de escritura en la memoria externa del dispositivo -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -18,7 +27,13 @@
         </activity>
         <activity
             android:name="com.example.serj.inmobiliaria.Secundaria"
-            android:label="@string/title_activity_secundaria" >
+            android:label="@string/title_activity_secundaria"
+            android:theme="@style/NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.serj.inmobiliaria.Editar"
+            android:label="@string/title_activity_editar"
+            android:theme="@style/NoActionBar">
         </activity>
     </application>
 

@@ -4,15 +4,18 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:id="@+id/ivCasa"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@drawable/casa"
-        android:layout_margin="10dp"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,8 +25,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ivCasa"
         android:layout_toEndOf="@+id/ivCasa"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginTop="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,9 +35,7 @@
         android:id="@+id/tvPrecio"
         android:layout_below="@+id/tvLocalidad"
         android:layout_toRightOf="@+id/ivCasa"
-        android:layout_toEndOf="@+id/ivCasa"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_toEndOf="@+id/ivCasa" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,8 +43,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="€"
         android:id="@+id/textView"
-        android:layout_alignBottom="@+id/tvPrecio"
-        android:layout_toRightOf="@+id/tvPrecio"
-        android:layout_toEndOf="@+id/tvPrecio"
-        android:layout_marginLeft="10dp" />
+        android:layout_below="@id/tvPrecio"
+        android:layout_marginLeft="70dp" />
 </RelativeLayout>

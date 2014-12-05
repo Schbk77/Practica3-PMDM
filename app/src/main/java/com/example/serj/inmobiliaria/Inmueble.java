@@ -3,29 +3,27 @@ package com.example.serj.inmobiliaria;
 import java.io.Serializable;
 
 public class Inmueble implements Comparable<Inmueble>, Serializable{
-    private String _id;
+    private int _id;
     private String localidad;
     private String direccion;
     private String tipo;
     private double precio;
-    private String foto;
 
     public Inmueble() {}
 
-    public Inmueble(String _id, String localidad, String direccion, String tipo, double precio, String foto) {
+    public Inmueble(int _id, String localidad, String direccion, String tipo, double precio) {
         this._id = _id;
         this.localidad = localidad;
         this.direccion = direccion;
         this.tipo = tipo;
         this.precio = precio;
-        this.foto = foto;
     }
 
-    public String get_id() {
+    public int get_id() {
         return _id;
     }
 
-    public void set_id(String _id) {
+    public void set_id(int _id) {
         this._id = _id;
     }
 
@@ -61,14 +59,6 @@ public class Inmueble implements Comparable<Inmueble>, Serializable{
         this.precio = precio;
     }
 
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -76,14 +66,14 @@ public class Inmueble implements Comparable<Inmueble>, Serializable{
 
         Inmueble inmueble = (Inmueble) o;
 
-        if (_id != null ? !_id.equals(inmueble._id) : inmueble._id != null) return false;
+        if (_id != inmueble._id) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return _id != null ? _id.hashCode() : 0;
+        return _id;
     }
 
     @Override
@@ -94,12 +84,11 @@ public class Inmueble implements Comparable<Inmueble>, Serializable{
                 ", direccion='" + direccion + '\'' +
                 ", tipo='" + tipo + '\'' +
                 ", precio=" + precio +
-                ", foto='" + foto + '\'' +
                 '}';
     }
 
     @Override
     public int compareTo(Inmueble another) {
-        return 0;
+        return this._id-another._id;
     }
 }
